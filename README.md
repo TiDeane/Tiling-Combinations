@@ -40,7 +40,7 @@ For example, the **input** for the previously given example would be:
 
 The solution we created stores the number of lines, the number of columns and the length of each line, and reduces this length, from right to left, until all lines have length 0. When there are _s_ possibilities it performs recursion _s_ times, placing squares of size 1 to size _s_ in that position, and adding the results of each recursion. As we do not store a matrix, the act of putting a square corresponds to reducing the size of the corresponding lines by the size of the square. When all lines reach size 0, it means that the area is fully covered with tiles, and 1 is returned. As each recursion puts a square of a different size, the final filling of the area will be different in each one, making it possible to reach the correct total number of combinations by adding 1 whenever a recursion fills the area to the end. 
 
-Below is an animation that shows the algorithm's process:
+Below is an animation that shows the algorithm's process (made by Tiago Deane):
 
 <p align="center">
   <img src="https://github.com/TiDeane/Tiling-Combinations/assets/120483063/b06c952c-cf6c-49e8-ae39-616a3f98eaf8" alt="animated" />
@@ -54,7 +54,7 @@ The problem with our implementation is that, for bigger areas, many states and c
 ## Testing
 
 The program `validTilingGenerator.cpp` was provided to generate inputs.
-- `./generator` **\<number of lines\> \<number of columns\> \<seed\>** > **\<nome ficheiro de teste\>**
+- `./generator` **\<number of lines\> \<number of columns\> \<seed\>** > **\<test file name\>**
 - `<number of lines>`: replace with the desired number of lines
 - `<number of columns>`: replace with the desired number of columns
 - `<seed>`: replace by an integer; giving the same seed and the same parameters as before, the generated instance will be the same
