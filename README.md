@@ -49,3 +49,13 @@ Below is an animation that shows the algorithm's process:
 ## Time Complexity
 
 The problem with our implementation is that, for bigger areas, many states and calculations start to repeat. For this reason, while the end result is always correct, the runtime grows exponentially. Our original plan was to use dynamic programming to achieve O(n) time complexity, but unfortunately we couldn't get it done before the project's deadline.
+
+
+## Testing
+
+The program `validTilingGenerator.cpp` was provided to generate inputs.
+- `./generator` **\<number of lines\> \<number of columns\> \<seed\>** > **\<nome ficheiro de teste\>**
+- `<number of lines>`: replace with the desired number of lines
+- `<number of columns>`: replace with the desired number of columns
+- `<seed>`: replace by an integer; giving the same seed and the same parameters as before, the generated instance will be the same
+- **Example**: ./generator 4 5 10 > example4x5.txt
