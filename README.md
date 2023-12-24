@@ -1,8 +1,8 @@
 # Tiling Combinations
 
-IST Analysis and Synthesis of Algorithms first course project, 2022/2023. Prints the number of different square tile combinations that can cover a specific area.
+IST Analysis and Synthesis of Algorithms' first course project, 2022/2023. Prints the number of different square tile combinations that can cover a specific area.
 
---------------------------------
+---
 
 ## The Goal
 
